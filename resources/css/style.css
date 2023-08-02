@@ -1,0 +1,494 @@
+/*general*/
+body {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Urbanist";
+    font-size: 1rem;
+    color:rgb(63, 63, 63);
+  
+}
+h1,h2,h3  {
+    font-weight: 900;
+}
+
+a {
+    text-decoration: none;
+    color:rgb(63, 63, 63);
+}
+
+a:hover {color:rgb(156, 155, 155);
+transition: color 100ms linear 0ms;}
+
+.article a {
+    text-decoration: none;
+    color:cornflowerblue;
+    font-weight: 700;
+    top: -64px;
+}
+
+.article a:hover {
+    color: rgb(77, 114, 182);
+    
+    transition: color 200ms ease-in-out 10ms;
+}
+
+
+
+
+/*header*/
+
+nav.mobile {
+  display: none;
+}
+nav.mobile2 {
+    display: none;
+}
+.logo-container-mobile {
+    display: none;
+}
+header {
+
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    top: 0px;
+    background-color: white;
+    height: 4rem;
+    z-index: 1;
+    
+}
+
+.logo-container {
+    display: flex;
+    margin-left: 1.5rem;
+    
+}
+
+
+.nav {
+    margin-right: 1.5rem;
+    
+}
+
+ul li {
+    list-style: none;
+    display: inline;
+    padding-left: 1rem;
+    
+    
+}
+
+
+/*mobile header*/
+
+@media only screen and (max-width: 775px) {
+    .nav {
+        display: none;
+    }
+    .logo-container {
+        display: none; 
+    }
+    .logo-container-mobile {
+        display: flex;
+        margin-left: 1.5rem;
+    
+    }
+   
+    
+   nav.mobile {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    margin: 1rem;
+   }
+}
+@media only screen and (max-width: 517px) {
+ 
+nav.mobile {
+    display: none
+}
+
+nav.mobile2 {
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 1rem;
+}
+.logo-container {
+    display: none; 
+}
+.logo-container-mobile {
+    display: none;
+
+}
+
+}
+
+
+
+/*banner*/
+
+.banner {
+    position: relative;
+    background-color: gainsboro;
+    align-items: center;
+    display: flex;
+    top: 64px; 
+}
+
+.banner-img-container {
+    width:60%;
+    margin: 2rem 1.5rem;
+}
+.banner-img-container img {
+    
+    width: 100%;
+}
+
+.banner-text {
+width: 25%;
+}
+
+.banner-text h4 {
+    text-align: center;
+    color: white;
+    background-color: slategray;
+    padding: 0.5rem 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+}
+
+.banner-text h4 {
+    text-align: center;
+    background-color: slategray;
+    padding: 0.5rem 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+}
+.banner-text h4:hover {
+    background-color: rgb(152, 152, 155);
+    color: antiquewhite;
+    transition: background-color 150ms linear 50ms;
+}
+
+/*mobile banner */
+
+@media only screen and (max-width: 700px) {
+
+.banner {
+    flex-direction: column;
+}
+
+.banner-img-container {
+    width:100%;
+    margin: 0;
+    
+}
+
+.banner-text {
+    width: auto;
+    margin: 2rem 1rem;
+    }
+
+.banner-text h1{
+    margin: 0rem 0rem 2rem 0rem;
+    
+}
+
+.banner-text h3{
+    margin: 0rem 0rem 1.5rem 0rem;
+    
+}
+.button {
+    margin: 0rem;
+}
+    
+}
+
+
+
+/*info*/
+
+.info-container {
+    
+
+    display:flex;
+    position: relative;
+    top: 64px; 
+    
+}
+
+.info-left {
+    width: 60%;
+    margin: 2rem 1.5rem 0 1.5rem;
+    
+}
+
+.info-left img {
+    width: 100%;
+   
+}
+
+.info-right {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 2rem auto;
+}
+
+.article {
+    display: flex;
+    margin-right: 0.25rem;
+    
+}
+
+.article p {
+    margin-right: 0.5rem;
+}
+
+
+.article-img img {
+  width: 100%; 
+}
+.article-img {
+    width: 35%;
+    margin: 1rem;
+    
+}
+
+.article-text {
+    width: 65%;
+    align-self: center;
+    
+}
+.article-mobile{
+    display: none;
+}
+.article-img-mobile{
+    display: none
+}
+@media (min-width: 631px) { 
+    .article:hover {
+    background-color:rgb(199, 197, 197);
+    transition: background-color 200ms ease-in 0ms;
+}
+}
+
+/*info-mobile*/
+
+@media only screen and (max-width: 630px) {
+
+    .info-left {
+        display: none;
+    }
+    .info-right {
+        width: 100%;
+    }
+
+    .article {
+        flex-direction: column;
+        width: 100%;
+        
+
+    }
+    .article-img {
+        display: none;
+    }
+    .article-img-mobile img {
+        width: 100%; 
+      }
+    .article-img-mobile {
+        display:block;
+        width: 100%;
+       
+    }
+
+    .article-text {
+        align-self: auto;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        width: 100%;
+    }
+
+    .info-right {
+        margin: 1rem 1rem;
+        
+    }
+    
+}
+
+
+
+/* courses */
+
+.courses-container {
+    background-color:gainsboro;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    
+    position: relative;
+    top: 64px; 
+    
+}
+.courses-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px 4.5rem ;
+    
+}
+
+.course-mobile {
+    display: none;
+}
+
+/* under 900px courses rule */
+@media only screen and (max-width: 900px) {
+    .courses-list {
+        margin: 0px 0rem;
+    }
+}
+
+.courses-container h2 {
+    margin: 0px;
+}    
+
+.course {
+    background-color: white;
+    width: 29%;
+    margin: 0 1rem 2rem 1rem;
+    text-align: left;
+}
+
+.course:hover {
+    transform: scale(1.05);
+    transition: all 250ms ease-in-out 0ms;
+}
+.course img {
+    width: 100%;
+}
+
+.course-text {
+    margin: 1rem 1rem 1.5rem 1rem;
+}
+
+.course h3 {
+    margin: 1rem auto 0.5rem auto;
+}
+.course p {
+    margin: 0.5rem auto auto auto;
+}
+
+@media only screen and (max-width: 500px) {
+
+    .course {
+        display: none;
+
+    }
+
+
+    .course-mobile { 
+    display: block;
+    background-color: gainsboro;
+    width: 100%;
+  
+
+}
+    .course-mobile h3 {
+        margin: 1rem 0rem 1.5rem 1rem;
+        font-size: 1.3rem;
+
+}
+    .courses-list {
+        margin-bottom: 2rem;
+    }
+    .courses-container {
+    background-color: white;
+    border-top: 1px solid gainsboro;
+    border-bottom: 1pxsolid gainsboro;
+}
+.courses-container a {
+    width: 100%;
+    margin: 0.5rem 1rem;
+    display: flex;
+}
+.course-mobile:hover {
+    background-color: rgba(0, 0, 0, 0.281);
+    color: rgb(53, 52, 52);
+}
+}
+
+/* Thesis */
+
+.thesis-title {
+    text-align: center;
+    top: 4rem;
+    position: relative;
+    border-top: 1px solid gainsboro;
+}
+.thesis-container {
+    text-align: center;
+    display: flex;
+    top:4rem;
+    position: relative;
+}
+.thesis-left {
+    width: 60%;
+    margin: 0px 1.5rem 2rem 1.5rem;
+    text-align: left;
+}
+.thesis-right {
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    text-align: left;
+}
+.thesis-video {
+    width: 100%;
+}
+
+/* Thesis mobile */
+
+@media only screen and (max-width: 630px) {
+    .thesis-right {
+        display: none;
+    }
+    .thesis-left {
+        width: 100%;
+    }
+    .thesis-left h3{
+        display: none;
+    }
+
+    .thesis-left p {
+        display: none;
+    }
+}
+
+/* Footer */
+.footer {
+    border-top: 1px solid rgba(128, 128, 128, 0.507);
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top:64px;
+    position: relative;
+}
+
+.footer p, ul {
+    margin: 0;
+}
+
+/* footer-mobile */
+@media only screen and (max-width: 590px) {
+    
+
+.footer-links {
+    display: none;
+}
+}
