@@ -13,4 +13,4 @@ This is the capstone project for [Codecademy's](https://www.codecademy.com/) 'Bu
 
 ## GitHub Pages:
 
-My [Colmar Academy landing page](https://ciarangold.github.io/colmaracademy/)
+My [Colmar Academy landing page](https://ciarangold.github.io/colmar-academy/)
